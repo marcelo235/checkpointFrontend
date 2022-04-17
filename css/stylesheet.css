@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --yellow: #f0db30;
+    --gray-light: #adb5bd;
+    --gray-dark: #383b3d;
+}
+
+/* Gerais */
+body {
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.row,
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.main-title {
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.title-h1 {
+    font-family: "Glegoo", serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.title-h2 {
+    font-size: 20px;
+}
+
+.link {
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: font-size 2s;
+}
+
+.link:hover {
+    border: 1px solid black;
+    font-size: 18px;
+    color: black;
+}
+
+.discretion {
+    font-size: 15px;
+}
+
+.bg-gray {
+    background-color: #e0e0e0;
+    padding: 1rem 0 1rem 0;
+}
+
+.btn-all {
+    width: 150px;
+    font-size: 1.2em;
+    background-color: var(--yellow);
+    text-align: center;
+    color: var(--gray-dark);
+    border: none;
+    transition: background-color 2ms, border 2ms;
+
+}
+
+.btn-all:hover {
+    background-color: white;
+    border: 2px solid var(--yellow);
+}
+
+.text-p {
+    color: black;
+    font-size: 16px;
+}
+
+/* Barra de navegação */
+nav .container-fluid {
+    padding: 1rem;
+}
+
+.navbar {
+    background-color: var(--bs-white);
+    padding: 0;
+}
+
+.navbar #logo {
+    width: 75px;
+}
+
+.navbar-brand {
+    color: var(--gray-dark);
+}
+
+.navbar-brand:hover {
+    color: var(--gray-light);
+}
+
+.navbar-toggler-icon {
+    background-image: url(../img/menu_black.svg);
+    background-size: cover;
+    padding: 0;
+}
+
+header #navbarSupportedContent .nav-item .active {
+    color: var(--bs-black);
+    font-weight: 700;
+}
+
+header #navbarSupportedContent a {
+    color: var(--gray-dark);
+}
+
+header #navbarSupportedContent .dropdown-item:hover {
+    background-color: var(--gray-light);
+}
+
+.fa-user-pen,
+.fa-user {
+    font-size: 22px;
+}
+
+/* Banner */
+.banner {
+    height: 100vh;
+    background-image: url(../img/Banner-caderneta-2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#banner .container-fluid .row {
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#banner .title-h1,
+#banner .title-h2,
+#banner .discretion {
+    color: white;
+}
+
+#banner .link {
+    color: white;
+    border: 1px solid white;
+}
+
+#banner .link:hover {
+    border: 1px solid white;
+    color: white;
+}
+
+/* Cards */
+
+.card {
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+}
+
+.card-img {
+    width: 85%;
+    align-self: center;
+}
+
+.card-body {
+    height: 230px;
+}
+
+.card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.btn-buy::after {
+    content: url(../img/card-icon.svg);
+    display: inline-block;
+    width: 22px;
+    margin: 0 0.8rem 0 0.8rem;
+}
+
+/* Propaganda */
+#propaganda {
+    margin: 1rem 0 1rem 0;
+}
+
+/* Footer da papelaria */
+footer ul li {
+    list-style: none;
+}
+
+footer a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    transition: font-weight 2ms;
+}
+
+footer a:hover {
+    font-weight: 700;
+    color: black;
+}
+
+.google,
+.facebook,
+.twitter {
+    font-size: 40px;
+    width: 55px;
+    background-color: #f0db30;
+    border-radius: 100%;
+    margin: 0 0.5rem 0 0.5rem;
+    color: white;
+    text-align: center;
+    transition: background-color 2ms, color 2ms;
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+.twitter:hover {
+    background-color: #5da7dd;
+    color: white;
+}
+
+.google:hover {
+    background-color: #dd4e41;
+    color: white;
+}
+
+/* Footer of team */
+#team-footer {
+    margin-top: 1rem;
+    padding: 2rem 0 2rem 0;
+    background-color: #c7c7c7;
+}
+
+.title-profile {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    transition: color 2ms;
+}
+
+.title-profile:hover {
+    color: var(--gray-dark);
+}
+
+.dev-role {
+    font-size: 16px;
+}
+
+.link-profile {
+    font-size: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+/* formulario */
+#pag-log .bg-gray,
+#pag-reg .bg-gray,
+#pag-recover .bg-gray,
+#pag-term .bg-gray {
+    height: 100vh;
+}
+
+#pag-log .btn-all {
+    width: 120px;
+}
+
+#pag-recover .btn-all {
+    width: 200px;
+}
+
+.form-input {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.6rem 0.7rem;
+    font-size: 1rem;
+}
+
+.form-label {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+}
+
+.gen-box {
+    background-color: white;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+}
+
+.lista li:nth-child(2n-1) {
+    background-color: white;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="../../css/stylesheet.css">
+<title>Papelaria Real | Notebook Ultra Slim LG </title>
+</head>
+
+<body>
+  <header>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../index.html">
+          <img id="logo" src="../../img/logo-smg.svg" alt="Logo da Papelaria Real">
+          Papelaria Real
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end .navbar-expand-md" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Escolar</a></li>
+                <li><a class="dropdown-item" href="#">Escrita</a></li>
+                <li><a class="dropdown-item" href="#">Escritório</a></li>
+                <li><a class="dropdown-item" href="#">Papeis</a></li>
+                <li><a class="dropdown-item" href="#">Livro</a></li>
+                <li><a class="dropdown-item" href="#">Infórmatica</a></li>
+                <li><a class="dropdown-item" href="#">Artes & Pintura</a></li>
+                <li><a class="dropdown-item" href="#">Mídias</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control form-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-all ms-2" type="submit">Buscar</button>
+          </form>
+          <div class="d-flex">
+            <a class="nav-link link-log" href="./login.html">
+              <i class="fa-solid fa-user"></i>
+              Login
+            </a>
+            <a class="nav-link link-reg" href="./register.html">
+              <i class="fa-solid fa-user-pen"></i>
+              Registre-se
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--modals-->
+    </div >
+    <div class="modal fade" id="login_necessario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">OPS.....</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Você precisar estar logado(a) para isso.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> <a href="#" target="blank"> Fazer
+                Login</a> </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="modal fade" id="falha_de_busca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">OPS.....</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Não encontrei, poderia tentar novamente.......
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Voltar </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="modal fade" id="Sem_CEP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"> Oxi....</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            E você espera que eu saiba?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Voltar </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="bg-gray">
+  <!--produto-->
+  <div class="container mt-5 pt-5 prod-box justify-content-center">
+    <div class="row align-items-center">
+      <div class="col-xs-12 col-md-4 col-xl-5"> <img src="../../img/produtos/notebook(4).jpg" class="img-thumbnail w-100"
+          alt="Notebook Ultra Slim LG"> </div>
+      <div class="col-xs-12 col-md-8 col-xl-7">
+        <fieldset class="ps-5 gen-box">
+          <legend>
+              <!-- Nome produto-->
+            <h1 class="title-h1"> Notebook Ultra Slim LG </h1>
+            <!-- preço -->
+            <h2>Por: R$ 1.549,90 </h2>
+            <p>de: R$ 1.599,00 </p>
+            <!-- parcelamento -->
+            <h3> parcelamento em até 12x sem juros</h3>
+          </legend>
+          <!-- entrega -->
+          <div>
+            <h4>Confira os prazo de entrega</h4>
+            <span><label class="form-label">CEP<input type="number" id="User" name="CEP" class="input-label" /></label></span>
+            <button type="button" class="btn-all" data-bs-toggle="modal" data-bs-target="#falha_de_busca">
+              Calcular Frete </button>
+            <a data-bs-toggle="modal" data-bs-target="#Sem_CEP">Não sei meu CEP</a>
+          </div>
+          <div>
+            <button type="button" class="btn btn-all btn-buy" data-bs-toggle="modal" data-bs-target="#login_necessario">
+              ADICIONAR NO CARRINHO
+            </button>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+  <!--desc-->
+  <div class=" gen-box container mt-3 mb-4 pb-2 pt-2">
+    <div>
+      <h2 class="text-center">Informações</h2>
+      <p class=".text-p"> 
+        Notebook LG Gram Intel Core i5-1035G7, 8GB, 256GB SSD, 17 IPS Full HD, Windows 10 Home, Titânio - 17Z90N-V.BJ51P2
+      </p>
+      <p class=".text-p">
+        Notebook LG Gram Intel Core i5-1035G7, 8GB, 256GB SSD, 17 IPS Full HD, Windows 10 Home, Titânio - 17Z90N-V.BJ51P2 Incrivelmente Leve O novo LG Gram 17 é referência em leveza e versatilidade. Com tela de 17", pesa apenas 1350g e tem tamanho compacto para te acompanhar facilmente aonde estiver. Com a 10a geração de processadores Intel Core com gráficos Intel Iris Plus, o novo LG Gram tem até 2x mais performance que a 8a geração de processadores. Veja conteúdos 4K HDR e jogo jogos em resolução 1080p.
+      </p>
+    </div>
+  </div>
+  <!--specs-->
+  <div class="container mt-2  mb-4 pb-4">
+    <h3 class="specs"> Especificações: </h3>
+    <ul class="lista">
+      <li> Marca // LG </li>
+      <li> Referência //  </li>
+      <li> Modelo // 17Z90N-V.BJ51P2 </li>
+      <li> Linha // Ultra </li>
+      <li> Processador // 	Intel Core i5  </li>
+    
+      <li> Memória RAM // 8 GB</li>
+     
+      <li> Capacidade do SSD //  256GB </li>
+      <li> Sistema operacional // Windows 10 Home </li>
+      <li> Versão do sistema operacional // Home Single Language 64 bit – em Português (Brasil) </li>
+      <li> Tipo de tela // IPS LCD </li>
+      <li> Tamanho da tela // 17' </li>
+      <li> Resolução da tela // HD </li>
+    </ul>
+  </div>
+</main>
+<footer>
+  <div class="container-fluid">
+      <!--Serviços-->
+      <div class="row justify-content-center bg-gray">
+          <div class="my-3 col-9 col-sm-7 col-md-6 col-lg-4 col-xl-3 col-xxl-3" id="servico">
+              <h4 class="main-title text-center">Serviços da Papelaria Real</h4>
+              <ul class="">
+                  <li class="itens"><a href="#">Sobre a Papelaria Real</a></li>
+                  <li class="itens"><a href="#">Serviços</a></li>
+                  <li class="itens"><a href="#">Nossas Lojas</a></li>
+                  <li class="itens"><a href="#">Trabalhe Conosco</a></li>
+              </ul>
+          </div>
+          <!--Central-->
+          <div class="my-3 col-9 col-sm-7 col-md-6 col-lg-4 col-xl-3 col-xxl-3" id="central-de-atendimento">
+              <h4 class="main-title">Central de Atendimento</h4>
+              <ul class="text-center">
+                  <li class="itens"><a href="#"><strong>Grande São Paulo</strong> (11)5635-8576</a></li>
+                  <li class="itens"><a href="#"><strong>Outras localidades</strong> 0800-258-5600</a></li>
+              </ul>
+          </div>
+          <!--Redes Socias-->
+          <div class="my-3 col-9 col-sm-7 col-md-8 col-lg-4 col-xl-3 col-xxl-3" id="redes-sociais">
+              <h4 class="main-title">Redes Socias</h4>
+              <div class="d-flex justify-content-center mt-3">
+                  <a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a class="google" href="#"><i class="fa-brands fa-google"></i></a>
+                  <a class="facebook" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid" id="team-footer">
+      <!--Time de desenvolvimento-->
+      <div class="row justify-content-center">
+          <div class="member-1 my-3 mx-2 col-9 col-sm-7 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
+              <h5 class="title-profile text-center">Pedro Luiz dos Santos</h5>
+              <p class="dev-role text-center">Responsável pelo desenvolvimento</p>
+              <div class="d-flex justify-content-center">
+                  <a class="link-profile  mx-3" href="https://www.linkedin.com/in/pedro-santos-587b10207/ "><i
+                          class="fa-brands fa-linkedin"></i></a>
+                  <a class="link-profile mx-3" href="https://github.com/PytterFox "><i
+                          class="fa-brands fa-github"></i></a>
+              </div>
+          </div>
+          <div class="member-2 my-3 mx-2 col-9 col-sm-7 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
+              <h5 class="title-profile text-center">Bruno Varelo Dos Santos De Sousa</h5>
+              <p class="dev-role text-center">Responsável pelo desenvolvimento</p>
+              <div class="d-flex justify-content-center">
+                  <a class="link-profile mx-3" href="https://www.linkedin.com/in/bruno-santos-a5869a132/"><i
+                          class="fa-brands fa-linkedin"></i></a>
+                  <a class="link-profile mx-3" href="https://github.com/brunovsantos33"><i
+                          class="fa-brands fa-github"></i></a>
+              </div>
+          </div>
+          <div class="member-3 my-3 mx-2 col-9 col-sm-7 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
+              <h5 class="title-profile text-center">Matheus Nunes Valadão Filho</h5>
+              <p class="dev-role text-center">Responsável pelo desenvolvimento</p>
+              <div class="d-flex justify-content-center">
+                  <a class="link-profile mx-3" href="https://github.com/marcelo235   "><i
+                          class="fa-brands fa-linkedin"></i></a>
+                  <a class="link-profile mx-3" href="https://www.linkedin.com/in/marcelo-nunes-5016b9236/"><i
+                          class="fa-brands fa-github"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"></script>
+</body>
+
+</html>
